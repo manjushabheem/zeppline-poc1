@@ -9,7 +9,7 @@ export class DataService {
   constructor(private http: HttpClient) { }
   
   getNotebooks():Observable<any>{
-      return this.http.get<any>("http://35.200.134.228:8080/api/notebook",{headers}).pipe(map(res =>this.show(res)));
+      return this.http.get<any>("http://35.233.210.124:9995/api/notebook",{headers}).pipe(map(res =>this.show(res)));
   }
 
   show(data){

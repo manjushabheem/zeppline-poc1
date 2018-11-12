@@ -7,7 +7,7 @@ import { DataService } from '../../services/data-service';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-
+  nfolder =[{foldername:"varun",files:[{filename:"varun",id:"1"},{filename:"note1",id:"2"},{filename:"varun1",id:"3"}]},{foldername:"rahul",files:[{filename:"rahul",id:"4"}]},{foldername:"manjusha",files:[{filename:"manju",id:"5"}]}]
   folder = [];
   files = []
   constructor(private dataService: DataService) { }
